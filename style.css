@@ -1,0 +1,195 @@
+body {
+  background-color: rgb(250, 239, 224);
+  font-family: 'Homemade Apple', cursive;
+  font-size:20px;
+}
+h1 {
+  color: rgb(3, 63, 3);
+  font-size: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+h2 {
+  color: rgb(29, 82, 29);
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+h3 {
+  color: rgb(45, 80, 45);
+  font-size: 24px;
+  
+}
+p {
+  color: black;
+  font-family: 'Homemade Apple';
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(3, 63, 3);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: rgb(250, 234, 211);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(250, 234, 211);
+  color: rgb(3, 63, 3);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(96, 133, 96);
+  color: rgb(250, 234, 211);
+}
+
+
+.ul{
+  position:absolute;
+  margin:0;
+  padding:0;
+}
+
+li{
+  text-align:center;
+  display:inline-block;
+  list-style:none;
+  position:relative;
+  border:solid 12px #fff;
+  background:#fff;
+  box-shadow:0 0 15px 0px #555;
+  transition:all 1s ease;
+  -o-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -webkit-transition:all 1s ease;
+  top:50px;
+}
+
+li:hover{
+  top:0px;
+  opacity:0.5;
+}
+
+li:nth-child(1){
+    transform:rotate(10deg);
+}
+
+li:nth-child(2){
+    transform:rotate(0deg);
+}
+
+li:nth-child(3){
+    transform:rotate(-15deg);
+}
+
+li:nth-child(4){
+    transform:rotate(0deg);
+}
+
+li:nth-child(5){
+  transform:rotate(-10deg);
+}
+
+li:nth-child(6){
+  transform:rotate(10deg);
+}
+
+p{
+  margin:-10px 0 0 0;
+}
+
+.light{
+  border-radius:50%;
+  position:absolute;
+  left:0;
+  right:0;
+  width:700px;
+  height:700px;
+  background:#fff;
+  filter:blur(100px);
+  opacity:0.3;
+  pointer-events:none;
+}
+
+#timer {
+  color: rgb(250, 234, 211);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: .7em;
+  letter-spacing: 5px;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: rgb(3, 63, 3);
+}
+
+.hours {
+  background: rgb(29, 82, 29);
+}
+
+.minutes {
+  background: rgb(45, 80, 45);
+}
+
+.seconds {
+  background: rgb(81, 97, 81);
+}
+
+.numbers {
+  font-family: 'Montserrat', sans-serif;
+  color:  rgb(250, 234, 211);
+  font-size: 4em;
+  text-align: center;
+}
+
+.white {
+  position: absolute;
+  background:  #eeeeee;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+}
+
+.red {
+  position: absolute;
+  background:  #EF2F3C;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+ 
+}
+
+.blue {
+  position: absolute;
+  background:  #276FBF;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+
+
+}
