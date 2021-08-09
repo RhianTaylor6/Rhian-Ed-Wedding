@@ -4,16 +4,139 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
+
 
 <h1>Rhian & Ed</h1>
-<p>01.10.2022</p>
+<h2>01.10.2022</h2>
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" id="about">Home</a>
+  <a href="venue.html" id="venue">Venue</a>
+  <a href="food.html" id="food">Food</a>
+  <a href="rsvp.html" id="rsvp">RSVP</a>
+</div>
+
+<br>
+<div id="timer">
+
+  <div class="days"> 
+      <div id="days" class="numbers "> </div>days</div> 
+    <div class="hours"> 
+      <div  id="hours" class="numbers"> </div>hours</div> 
+    <div class="minutes"> 
+      <div  id="minutes" class="numbers"> </div>minutes</div> 
+    <div   class="seconds"> 
+      <div id="seconds" class="numbers"> </div>seconds</div> 
+    </div>
+
+</div>
+
+
+
+<ul>
+  <li><img src="images/IMG_7767.jpeg" width="200">
+    <p>Ice Bar</p></li>
+  <li><img src="images/IMG_5249.jpeg" width="200"/>
+    <p>Picnic in the Park</p></li>
+  <li><img src="images/IMG_5536.jpeg" width="200"/>
+    <p>Christchurch, Oxford</p></li>
+  <li><img src="images/1857ade4-2697-45c5-90cb-07e53424c79c.jpg" width="200"/>
+    <p>Bali Waterfall</p></li>
+  <li><img src="images/IMG_5122.jpeg" width="200"/>
+    <p>Forest Walk</p></li>
+  <li><img src="images/IMG_2486.jpeg" width="200"/>
+    <p>Lockdown Date Night</p></li>
+</ul>
+<div class="light"></div>
+<br>
+<h2>Our Story</h2>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2017 - New Beginnings</h2>
+      <p>Met in June whilst working for the same company and started dating on September 30th.</p>
+      
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2018 - Adventure Time</h2>
+      <p>Went on first holiday abroad together to Rhodes, Greece in April and then to Oslo, Norway in September.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2019 - Getting Serious</h2>
+      <p>Moved in together in May and we went on our longest trip yet to Bali, Indonesia. </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2020 - Surprise!</h2>
+      <p>Ed proposed on September 30th.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2021 - Making Plans</h2>
+      <p>Booked our wedding in August.</p>
+    </div>
+  </div>
+</div>
+<br>
+
+<ul>
+  <li><img src="images/IMG_2249.jpeg" width="200">
+    <p>Lockdown Birthday</p></li>
+    <li><img src="images/IMG_0345.jpeg" width="200"/>
+      <p>Christmas Tree Shopping</p></li>
+  <li><img src="images/62040369214__03D0F4DD-01E4-499E-9FED-FC06AF525BD3.jpeg" width="200"/>
+    <p>Swim in the Sea</p></li>
+  <li><img src="images/IMG_5115.jpeg" width="200"/>
+    <p>Lady & The Tramp</p></li>
+  <li><img src="images/IMG_7709.jpeg" width="200"/>
+    <p>Oslo </p></li>
+  <li><img src="images/IMG_8231.jpeg" width="200"/>
+    <p>Winter Wonderland</p></li>
+</ul>
+<div class="light"></div>
 
 </body>
+<script>
+  const year = new Date().getFullYear();
+const myDate = new Date('Oct 01, 2022 00:00:00');
+console.log(myDate);
+
+// countdown
+let timer = setInterval(function() {
+
+// get today's date
+const today = new Date().getTime();
+
+// get the difference
+const diff = myDate - today;
+
+// math
+let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+// display
+document.getElementById("days").innerHTML=days
+document.getElementById("hours").innerHTML=hours
+document.getElementById("minutes").innerHTML=minutes
+document.getElementById("seconds").innerHTML=seconds
+
+
+
+}, 1);
+
+</script>
+
 </html>
