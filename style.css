@@ -3,6 +3,10 @@ body {
   font-family: 'Homemade Apple', cursive;
   font-size:20px;
 }
+div {
+  width: 90%;
+  height: 90%;
+}
 h1 {
   color: rgb(3, 63, 3);
   font-size: 64px;
