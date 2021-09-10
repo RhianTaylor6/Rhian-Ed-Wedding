@@ -135,6 +135,24 @@ html {
   padding: 0;
 }
 
+.space{
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.btn{
+  background-color: rgb(81, 97, 81) ;
+}
+
+.btn:hover{
+  background-color: rgb(45, 80, 45);
+
+}
+
+
+.rsvpform{
+  width:50%;
+}
 .card{
   display: block;
   margin-left: auto;
