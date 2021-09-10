@@ -2,6 +2,7 @@ body {
   
   font-family: 'Oswald', sans-serif;
   font-size:20px;
+  
 }
 
 h1 {
@@ -16,13 +17,14 @@ h2 {
 	font-size: 40px;
 	text-align: center;
 }
+
 .circle {
 
-  width: 80px;
-  line-height: 80px;
+  width: 60px;
+  line-height: 60px;
   font-family: 'Pacifico', cursive;
   color: white;
-	font-size: 20px;
+	font-size: 15px;
 	text-align: center;
   border-radius: 50%;
   border-color: white;
@@ -34,16 +36,21 @@ p{
   color: white;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 .backimage{
   background-image: url(../Rhian-Ed-Wedding/images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg);
-	background-size: cover;
+	background-size: cover; 
+}
+
+.backimage::after {
   opacity:0.4;
-
 }
 
-.sticky-offset {
-  top: 56px;
-}
 
 .glyphicon-heart{
   color: white;
@@ -54,7 +61,7 @@ p{
 
 .navbar-link{
   font-family: 'Pacifico', cursive;
-	font-size: 40px;
+	font-size: 20px;
 	text-align: center;
   color: white;
   width: 100px;
@@ -62,16 +69,32 @@ p{
   font-family: 'Pacifico', cursive;
   color: white;
 	text-align: center;
-  border-radius: 50%;
+
+  
+
+}
+
+.navbar{
+  background-color:rgb(81, 97, 81);
+  width: 100%;
+  text-align: center;
+  
 
 }
 
 
-.btn{
-  
-  font-family: 'Pacifico', cursive;
-	font-size: 40px;
-	text-align: center;
+.navbar a:hover{
+  color:whitesmoke;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 2%;
 }
 
 .navbar-text{
@@ -144,7 +167,7 @@ p{
 .header-image {
 	background-image: url(../Rhian-Ed-Wedding/images/IMG_5249.jpeg);
 	background-size: cover;
-  background-position: 0 -400px; 
+  background-position: 0 -300px; 
   
 }
 
@@ -160,3 +183,101 @@ p{
   padding-bottom:15%;
 }
 
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+  opacity: 1;
+}
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
