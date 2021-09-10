@@ -1,157 +1,184 @@
 body {
-  background-color: rgb(250, 239, 224);
-  font-family: 'Homemade Apple', cursive;
+  
+  font-family: 'Oswald', sans-serif;
   font-size:20px;
+  
 }
-div {
-  width: 99%;
-  height: 99%;
-}
+
 h1 {
-  color: rgb(3, 63, 3);
+  font-family: 'Oswald', sans-serif;
+	color: white;
   font-size: 64px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
 }
 h2 {
-  color: rgb(29, 82, 29);
-  font-size: 24px;
+  font-family: 'Pacifico', cursive;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+
+.circle {
+
+  width: 60px;
+  line-height: 60px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+	font-size: 15px;
+	text-align: center;
+  border-radius: 50%;
+  border-color: white;
+  border: solid;
+  
+  
+}
+p{
+  color: white;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.backimage{
+  background-image: url(../Rhian-Ed-Wedding/images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg);
+	background-size: cover; 
+}
+
+.backimage::after {
+  opacity:0.4;
+}
+
+
+.glyphicon-heart{
+  color: white;
+  padding-right: 5%;
+  padding-left: 5%;
+  
+}
+
+.navbar-link{
+  font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	text-align: center;
+  color: white;
+  width: 100px;
+  line-height: 100px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+	text-align: center;
+
+  
+
+}
+
+.navbar{
+  background-color:rgb(81, 97, 81);
+  width: 100%;
+  text-align: center;
+  
+
+}
+
+
+.navbar a:hover{
+  color:whitesmoke;
+}
+
+
+.row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+
+.column {
+  flex: 50%;
+  padding: 2%;
+}
+
+.navbar-text{
+  font-family: 'Pacifico', cursive;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+
+.profilepic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 30%;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+.textbox{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 25px;
+  background: whitesmoke;
+  padding: 20px;
+  width: 75%;
+  height: 250px;
+  color:rgb(81, 97, 81);
+  text-align: center;
+
+}
+
+.green{
+  color:rgb(81, 97, 81);
+  padding: 0;
+}
+
+.space{
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.btn{
+  background-color: rgb(81, 97, 81) ;
+}
+
+.btn:hover{
+  background-color: rgb(45, 80, 45);
+
+}
+
+
+.rsvpform{
+  width:50%;
+}
+.card{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 25px;
+  background: whitesmoke;
+  padding: 20px;
+  color:rgb(81, 97, 81);
   text-align: center;
 }
-h3 {
-  color: rgb(45, 80, 45);
-  font-size: 24px;
-  
-}
-p {
-  color: black;
-  font-family: 'Homemade Apple';
-}
 
-/* Style the links inside the sidenav */
-#mySidenav a {
-  position: absolute; /* Position them relative to the browser window */
-  left: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-}
-
-#mySidenav a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-
-/* The about link: 20px from the top with a green background */
-#about {
-  top: 20px;
-  background-color: rgb(3, 63, 3);
-  
-}
-
-#venue {
-  top: 80px;
-  background-color: rgb(39, 87, 39); /* Blue */
-}
-
-#food {
-  top: 140px;
-  background-color: rgb(66, 97, 66); /* Red */
-}
-
-#rsvp {
-  top: 200px;
-  background-color: rgb(100, 112, 100) /* Light Black */
-}
-
-
-.ul{
-  position:absolute;
-  margin:0;
-  padding:0;
-}
-
-li{
-  text-align:center;
-  display:inline-block;
-  list-style:none;
-  position:relative;
-  border:solid 12px #fff;
-  background:#fff;
-  box-shadow:0 0 15px 0px #555;
-  transition:all 1s ease;
-  -o-transition:all 1s ease;
-  -moz-transition:all 1s ease;
-  -webkit-transition:all 1s ease;
-  top:50px;
-}
-
-li:hover{
-  top:0px;
-  opacity:0.5;
-}
-
-li:nth-child(1){
-    transform:rotate(10deg);
-}
-
-li:nth-child(2){
-    transform:rotate(0deg);
-}
-
-li:nth-child(3){
-    transform:rotate(-15deg);
-}
-
-li:nth-child(4){
-    transform:rotate(0deg);
-}
-
-li:nth-child(5){
-  transform:rotate(-10deg);
-}
-
-li:nth-child(6){
-  transform:rotate(10deg);
-}
-
-p{
-  margin:-10px 0 0 0;
-}
-
-.light{
-  border-radius:50%;
-  position:absolute;
-  left:0;
-  right:0;
-  width:700px;
-  height:700px;
-  background:#fff;
-  filter:blur(100px);
-  opacity:0.3;
-  pointer-events:none;
-}
 
 #timer {
-  color: rgb(250, 234, 211);
+  color: white;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: .7em;
   letter-spacing: 5px;
 }
 
 .days, .hours, .minutes, .seconds {
   display: inline-block;
+  padding-top: 100%;
   padding: 20px;
   width: 200px;
   border-radius: 10px;
@@ -159,181 +186,36 @@ p{
 
 .days {
   background: rgb(3, 63, 3);
+  opacity: 0.5;
 }
 
 .hours {
   background: rgb(29, 82, 29);
+  opacity: 0.5;
 }
 
 .minutes {
   background: rgb(45, 80, 45);
+  opacity: 0.5;
 }
 
 .seconds {
   background: rgb(81, 97, 81);
+  opacity: 0.5;
 }
 
 .numbers {
-  font-family: 'Montserrat', sans-serif;
-  color:  rgb(250, 234, 211);
+  font-family: 'Oswald', sans-serif;
+  color:  white;
   font-size: 4em;
   text-align: center;
-}
-
-* {
-  box-sizing: border-box;
+  
 }
 
 
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
 
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid rgb(3, 63, 3);
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-/* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-
-/* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-/* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
-
-/* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
-}
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
@@ -342,4 +224,122 @@ p{
     display: block;
     margin-bottom: 20px;
   }
+}
+
+.header-image {
+	background-image: url(../Rhian-Ed-Wedding/images/IMG_5249.jpeg);
+	background-size: cover;
+  background-position: 0 -300px; 
+  
+}
+
+.header {
+	padding-top: 30%;
+  font-family: 'Pacifico', cursive;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+
+.botpad {
+  padding-bottom:15%;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+  opacity: 1;
+}
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
 }
