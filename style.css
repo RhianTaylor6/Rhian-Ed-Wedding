@@ -135,6 +135,10 @@ html {
   padding: 0;
 }
 
+iframe{
+  width: 90%;
+}
+
 .space{
   padding-right: 5%;
   padding-bottom: 5%;
