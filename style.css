@@ -237,7 +237,7 @@ iframe{
 .header-image {
 	background-image: url(../Rhian-Ed-Wedding/images/IMG_5249.jpeg);
 	background-size: cover;
-  background-position: 0 -300px; 
+  background-position: 0 -200px; 
   
 }
 
@@ -373,7 +373,7 @@ iframe{
     .header-image {
       background-image: url(../Rhian-Ed-Wedding/images/IMG_5249.jpeg);
       background-size: cover;
-      background-position: 0 -100px; 
+      background-position: 0 -50px; 
       
     }
 }
